@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电视剧</title>
+<link rel="stylesheet" type="text/css" href="../css/TV-play.css">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/easySlider.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/return.js"></script>
+</head>
+
+<body>
+<!--.........................................全局......................................................... -->
+<div id="com">
+<!--........................................title......................................................... -->
+	<div id="title">
+    	<div class="logo"><img src="../images/index-img/logo.gif" width="203px" height="78px"></div>
+        <div class="lead">猫姐与你一同追剧</div>
+        <div class="login">
+        	<span style="color:#008040">已登录</span>
+        	&nbsp;/&nbsp;
+                <a href="#">注册
+                    	
+                  </a>
+           
+      </div>
+    </div>
+ <!--.........................................导航与搜索............................................. -->
+ 	<div id="navigation-search">
+    	<!--..............................导航,二级导航 .........................-->
+    	<div class="navigation">
+        	<ul class="nav">
+            	<li><a href="index.html" class="home">首页</a></li>
+                	
+                   
+             
+            	<li onmouseover=" displaysubMenu(this)" onmouseout="hidesubMenu(this)"><a href="#" class="TV">										                   电视剧
+                </a> 
+					  <ul>
+						<li><a href="inland.html">
+                        内地</a></li> 
+						<li><a href="#">港剧</a></li> 
+						<li><a href="#">台剧</a></li> 
+                		<li><a href="#">韩剧</a></li> 
+						<li><a href="#">美剧</a></li> 
+					</ul> 
+				</li>
+                <li onmouseover=" displaysubMenu(this)" onmouseout="hidesubMenu(this)">
+                	<a href="film.html">电影</a>
+                	<ul>
+                    	<li><a href="#">最近热映</a></li> 
+						<li><a href="#">网络电影</a></li> 
+                    </ul>
+                  <li><a href="vareity.html">综艺
+                  </a></li>
+            </ul>
+            </div>  
+            	<div class="search">
+            	 <form>
+    			<input class="search-box"  type="text" value="请在此输入片名或演员名称">
+                <a href="zhaoliying-information.html">
+    			<input class="search-onlick"  type="button" value="搜索" >
+                </a>
+   				</form>
+                </div>
+               </div><!-- 导航与搜索div-->
+ <!-- ..................................轮播图.......................................................-->
+    <div id="slider">
+	<ul class="slides clearfix">
+		<li>
+        <a href="#">
+        <img class="responsive" src="../images/TV-img/继承者们.jpg" width="1112" height="696">
+        </a>
+        </li>
+		<li>
+        <a href="#">
+        <img class="responsive" src="../images/TV-img/三生三世十里桃花.jpg" width="1112" height="696">
+        </a>
+        </li>
+		<li>
+        <a href="#">
+        <img class="responsive" src="../images/TV-img/白鹿原2.jpg" width="1112" height="696">
+        </a>
+        </li>
+        <a href="file:///E:/HTML/15210320110%E9%BB%84%E6%99%93%E5%A8%9F/html/chuqiaozhuan.html">
+		<li><img class="responsive" src="../images/TV-img/特工皇妃楚乔传.jpg" width="1112" height="696">
+        </a>
+        </li>
+	</ul>
+	<ul class="controls">
+		<li><img src="../images/TV-img/prev.png" alt="previous"></li>
+		<li><img src="../images/TV-img/next.png" alt="next"></li>
+	</ul>
+    <ul class="pagination">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<!--........................................热播剧场...................................................... -->
+	<div id="hit">
+    	<div class="hit-left">
+        <!--.................................内地热播................................................... -->
+        	<div class="hit-inland-title">内地热播</div>
+            	<div class="hit-inland-picture">
+        	<div class="hit-inland-picture-A">
+            	 <a href="#">
+            		<img src="../images/TV-img/择天记.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px" >古力娜扎 鹿晗</p><p style="margin-top:8px" >择天记
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="hit-inland-picture-B">
+             	 <a href="#">
+             		<img src="../images/TV-img/欢乐颂2.jpg" width="210px" height="280px">
+                    	<p style="margin-top:8px">刘涛 蒋欣</p><p style="margin-top:8px" >欢乐颂2
+                    </p>
+                 </a>
+            </div>
+               <div class="hit-inland-picture-C">
+               		 <a href="file:///E:/HTML/15210320110%E9%BB%84%E6%99%93%E5%A8%9F/html/chuqiaozhuan.html">
+               			<img src="../images/TV-img/特工皇妃.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">赵丽颖 林更新</p><p style="margin-top:8px" >特工皇妃楚乔传
+                </p>
+             </a>
+         </div>     			 
+                <div class="hit-inland-picture-D">
+                	<a href="#">
+               			<img src="../images/TV-img/思美人.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">马可  张馨予</p><p style="margin-top:8px" >思美人
+                </p>
+            </a>
+        </div>
+                <div class="hit-inland-picture-E">
+                	<a href="#">
+              			 <img src="../images/TV-img/云巅之上第二季.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px"> 陈晓  袁姗姗</p><p style="margin-top:8px" >云巅之上第二季
+                </p>
+            </a> 
+        </div>
+                <div class="hit-inland-picture-F">
+                	<a href="#">
+               			<img src="../images/TV-img/花开半夏.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">  林申  李沁
+                            	</p>
+                        	<p style="margin-top:8px" >花开半夏
+                              </p>
+                          </a> 
+                    </div>
+      <!--........................查看更多.................................................... -->
+      			<div class="more"><a href="#" title="点击查看更多">查看更多</a></div>
+        </div><!-- hit-inland-picture--> 
+        
+  <!--...............................港台热播............................................................... -->
+  <div class="hit-hongkong-title">港台热播</div>
+  		<div class="hit-hongkong-picture">
+        	<div class="hit-hongkong-picture-A">
+            	 <a href="#">
+            		<img src="../images/TV-img/护花危情.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px" >钟嘉欣  黄宗泽</p><p style="margin-top:8px" >护花危情
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="hit-hongkong-picture-B">
+             	 <a href="#">
+             		<img src="../images/TV-img/使徒行者.jpg" width="210px" height="280px">
+                    	<p style="margin-top:8px"> 佘诗曼  林峯</p><p style="margin-top:8px" >使徒行者
+                    </p>
+                 </a>
+            </div>
+               <div class="hit-hongkong-picture-C">
+               		 <a href="#">
+               			<img src="../images/TV-img/金枝欲虐.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">陈豪  蔡少芬</p><p style="margin-top:8px" >金枝欲虐
+                </p>
+             </a>
+         </div>     			 
+                <div class="hit-hongkong-picture-D">
+                	<a href="#">
+               			<img src="../images/TV-img/宫心计.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">佘诗曼  杨怡</p><p style="margin-top:8px" >宫心计
+                </p>
+            </a>
+        </div>
+                <div class="hit-hongkong-picture-E">
+                	<a href="#">
+              			 <img src="../images/TV-img/我可能不会爱你.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px">陈柏霖  林依晨</p><p style="margin-top:8px" >我可能不会爱你
+                </p>
+            </a> 
+        </div>
+                <div class="hit-hongkong-picture-F">
+                	<a href="#">
+               			<img src="../images/TV-img/我的亿万面包.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">林依晨  郑元畅
+                            	</p>
+                        	<p style="margin-top:8px" >我的亿万面包
+                              </p>
+                          </a> 
+                    </div>
+      <!--........................查看更多.................................................... -->
+      			<div class="more"><a href="#" title="点击查看更多">查看更多</a></div>
+        </div><!-- hit-hongkong-picture--> 
+  
+  <!--...............................日韩热播............................................................... -->
+  <div class="hit-korea-title">日韩热播</div>
+  		<div class="hit-korea-picture">
+        	<div class="hit-korea-picture-A">
+            	 <a href="#">
+            		<img src="../images/TV-img/最佳情侣.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px" > 李多海  周觅</p><p style="margin-top:8px" >最佳情侣
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="hit-korea-picture-B">
+             	 <a href="#">
+             		<img src="../images/TV-img/扑通扑通Love.jpg" width="210px" height="280px">
+                    	<p style="margin-top:8px">尹斗俊  金瑟祺</p><p style="margin-top:8px" >扑通扑通Love
+                    </p>
+                 </a>
+            </div>
+               <div class="hit-korea-picture-C">
+               		 <a href="#">
+               			<img src="../images/TV-img/匹诺曹.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">李钟硕  朴信惠</p><p style="margin-top:8px" >匹诺曹
+                </p>
+             </a>
+         </div>     			 
+                <div class="hit-korea-picture-D">
+                	<a href="#">
+               			<img src="../images/TV-img/我的野蛮女友.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">草剪刚  田中丽奈 </p><p style="margin-top:8px" >我的野蛮女友
+                </p>
+            </a>
+        </div>
+                <div class="hit-korea-picture-E">
+                	<a href="#">
+              			 <img src="../images/TV-img/宠物情人.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px">入山法子  志尊淳</p><p style="margin-top:8px" >宠物情人
+                </p>
+            </a> 
+        </div>
+                <div class="hit-korea-picture-F">
+                	<a href="#">
+               			<img src="../images/TV-img/高校老师.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">藤木直人  上戸彩</p><p style="margin-top:8px" >高校老师
+                        	</p>    
+                          </a> 
+                    </div>
+      <!--........................查看更多.................................................... -->
+      			<div class="more"><a href="#" title="点击查看更多">查看更多</a></div>
+        </div><!-- hit-korea-picture--> 
+        
+  <!--...............................海外热播............................................................... -->
+  <div class="hit-foreign-title">海外热播</div>
+  		<div class="hit-foreign-picture">
+        	<div class="hit-foreign-picture-A">
+            	 <a href="#">
+            		<img src="../images/TV-img/生活大爆炸第八季.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px" >吉姆·帕森斯  卡蕾·库奥科</p>
+                        <p style="margin-top:8px" >生活大爆炸第八季
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="hit-foreign-picture-B">
+             	 <a href="#">
+             		<img src="../images/TV-img/欲望的都市第一季.jpg" width="210px" height="280px">
+                    	<p style="margin-top:8px">莎拉·洁西卡·帕克</p><p style="margin-top:8px" >欲望的都市第一季
+                    </p>
+                 </a>
+            </div>
+               <div class="hit-foreign-picture-C">
+               		 <a href="#">
+               			<img src="../images/TV-img/老友记第一季.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px"> 莉莎·库卓  马特·勒布朗</p>
+                            <p style="margin-top:8px" >老友记第一季
+                </p>
+             </a>
+         </div>     			 
+                <div class="hit-foreign-picture-D">
+                	<a href="#">
+               			<img src="../images/TV-img/我欲为人第一季.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">Meaghan Rath  Sam Witwer</p>
+                            <p style="margin-top:8px" >我欲为人第一季
+                </p>
+            </a>
+        </div>
+                <div class="hit-foreign-picture-E">
+                	<a href="#">
+              			 <img src="../images/TV-img/泰版浪漫满屋.jpg" width="210px" height="280px">
+            			<p style="margin-top:8px">Pirath Nitipaisankul(Mike)</p>
+                        <p style="margin-top:8px" >泰版浪漫满屋
+                </p>
+            </a> 
+        </div>
+                <div class="hit-foreign-picture-F">
+                	<a href="#">
+               			<img src="../images/TV-img/流氓蛋糕店.jpg" width="210px" height="280px">
+            				<p style="margin-top:8px">长泽雅美  蓝正龙
+                            	</p>
+                        	<p style="margin-top:8px" >流氓蛋糕店
+                              </p>
+                          </a> 
+                    </div>
+      <!--........................查看更多.................................................... -->
+      			<div class="more"><a href="#" title="点击查看更多">查看更多</a></div>
+        </div><!-- hit-foreign-picture--> 						
+        </div><!--hit-left -->
+        
+ <!--.........................................hit-right................................................... -->
+        <div class="hit-right">
+        	<div class="hit-right-type">
+            <!--.................................................................................. -->
+            	<p class="hit-right-type-title">按类型查找</p>
+                <div class="hit-right-type-title-tv-type"><p style="text-align:center">按电视剧类型</p>
+                <br>
+               
+               <a href="#" style="color:#008040">全部</a>
+               <a href="#">言情</a> 
+               <a href="#">伦理</a> 
+               <a href="#">喜剧</a>
+               <a href="#">悬疑</a>
+               <a href="#">都市</a> 
+               <a href="#">偶像</a>
+               <p style="margin-top:10px">
+               		<a href="#">古装</a>
+               		<a href="#">军事</a>
+               		<a href="#">警匪</a>
+               		<a href="#">历史</a>
+               		<a href="#">武侠</a>
+            
+               		<a href="#">科幻</a>
+               		<a href="#">动作</a>
+               </p>
+               <p style="margin-top:10px">
+               <a href="#">励志</a>
+               <a href="#">神话</a>
+               <a href="#">谍战</a>
+               <a href="#">情景</a>
+             
+               <a href="#">粤语</a>
+               <a href="#">宫廷</a>
+               
+               <a href="#">其他</a>
+               </p>
+ <!--.................................................................................................... -->
+               <div class="hit-right-type-title-area-type"><p style="text-align:center">按地区</p>
+               <br>
+               <a href="#" style="color:#008040">全部</a>
+        	   <a href="#">内地</a>
+               <a href="#">香港</a> 
+               <a href="#">台湾</a>
+        	   <a href="#">韩国</a>
+        	   <a href="#">日本</a> 
+               <a href="#">美国</a>
+               <p style="margin-top:10px"> 
+        	   <a href="#">英国</a> 
+        	   <a href="#">法国</a>
+               <a href="#">泰国</a> 
+        	   <a href="#">其他</a> 
+               </p>
+               </div><!--hit-right-type-title-area-type-->
+ <!--.................................................................................................... -->                
+        	<div class="hit-right-type-title-actor-type"><p style="text-align:center">按演员</p>
+               <br>
+               <a href="#" style="color:#008040">全部</a>
+               <a href="#">胡歌</a>
+               <a href="#">赵丽颖</a>
+               <a href="#">杨幂</a>
+               <a href="#">刘诗诗</a>
+               <a href="#">舒畅</a>
+               <p style="margin-top:10px">
+                	<a href="#">景甜</a>
+               		<a href="#">刘恺威</a>
+                	<a href="#">秦俊杰</a>
+                	<a href="#">赵又廷</a>
+               		<a href="#">迪丽热巴</a>
+               </p>
+               
+                <p style="margin-top:10px">
+                	<a href="#">李易峰</a>
+                	<a href="#">王鸥</a>
+                 	<a href="#">靳东</a>
+                    <a href="#">朴信惠</a>
+                    <a href="#">更多</a>
+              	</p>
+        </div><!--hit-right-type-title-actor-type -->
+       			
+ <!--.................................................................................................... -->          <div class="hit-right-type-title-year-type"><p style="text-align:center">按年份</p>
+               <br>
+               <a href="#" style="color:#008040">全部</a>
+               <a href="#">2017</a>
+               <a href="#">2016</a>
+               <a href="#">2015</a>
+               <a href="#">2014</a>
+               <a href="#">2013</a>
+               <a href="#">2012</a>
+               <p style="margin-top:10px">
+               		<a href="#">2011</a>
+                	<a href="#">2010</a>
+                	<a href="#">2009</a>
+               		<a href="#">2008</a>
+                	<a href="#">2007</a>
+                    <a href="#">更多</a>
+              	</p>
+        </div><!--hit-right-type-title-year-type -->     
+     </div><!-- hit-right-type-title-tv-type-->
+</div><!-- hit-right-type-->
+
+
+<!--.............................................排行榜................................................ -->
+<div class="hit-right-list-of-tv">
+	<div class="hit-right-list-of-tv-title">电视剧排行榜
+    	</div><!--hit-right-list-of-tv-title -->
+     <div class="hit-right-list-of-tv-name">
+    	[1] 欢乐颂2<span style="margin-left:150px">8.2分</span>
+        <p style="margin-top:10px">
+        	[2] 楚乔传<span style="margin-left:159px">8.0分</span>
+        </p>
+        <p style="margin-top:10px">
+        	[3] 择天记<span style="margin-left:159px">7.8分</span>
+        </p>
+        <p style="margin-top:10px">
+        	[4] 狐狸的夏天<span style="margin-left:128px">7.7分</span>
+        </p>
+        <p style="margin-top:10px">
+        	[5] 外科风云<span style="margin-left:144px">7.6分</span>
+        </p>
+        <p style="margin-top:10px">           
+        	[6] 龙珠传奇<span style="margin-left:144px">7.5分</span>
+        </p>
+        <p style="margin-top:10px">  
+        [7] 小情人<span style="margin-left:159px">7.4分</span>
+        </p>
+        <p style="margin-top:10px">  
+        [8] 卧底归来<span style="margin-left:145px">7.3分</span>
+        <p style="margin-top:10px">  
+        [9] 白鹿原<span style="margin-left:160px">7.1分</span>
+        <p style="margin-top:10px">  
+        [10] 铁血将军<span style="margin-left:136px">7.0分</span>
+        </p>
+        
+        
+           	
+                
+                	
+    </div><!--hit-right-list-of-tv-name -->
+</div><!--hit-right-list-of-tv -->
+
+
+
+
+
+
+<!--..........................................为你喜欢的剧点赞........................................... -->
+        
+<div class="hit-right-give-the-thumbs-up">
+	<div class="hit-right-give-the-thumbs-up-title">为你喜欢的剧点赞
+    </div><!-- hit-right-give-the-thumbs-up-title-->
+    	<div class="hit-right-give-the-thumbs-up-tv-name">
+        	[1]</span> 欢乐颂2<span style="margin-left:160px">
+            	<a href="#">&hearts;</a></span>
+                <br>
+                <p style="margin-top:10px">&nbsp;&nbsp;已有23万人点赞</p>    
+            	
+           		<p style="margin-top:10px">
+            [2] 择天记<span style="margin-left:168px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有22.4万人点赞
+                </p>
+                
+                <p style="margin-top:10px">
+            [3] 思美人<span style="margin-left:168px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有22万人点赞
+                </p>
+                
+                <p style="margin-top:10px">
+            [4] 特工皇妃楚乔传<span style="margin-left:104px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有21.8万人点赞
+                </p>
+                
+                <p style="margin-top:10px">
+            [5] 狐狸的夏天2<span style="margin-left:127px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有21.5万人点赞
+                </p>
+                
+                <p style="margin-top:10px">
+            [6] 小情人<span style="margin-left:168px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有21万人点赞
+                </p>
+                
+                <p style="margin-top:10px">
+            [6] 太阳的后裔<span style="margin-left:135px">
+            	<a href="#">&hearts;</a></span>
+                </p>
+                <p style="margin-top:10px">
+                &nbsp;&nbsp;已有20万人点赞
+                </p>
+                
+                <p class="give-the-thumbs-up-tv-name-more">
+                	<a href="#" title="点击查看更多你想点赞的剧">更多你想点赞的剧</a>
+                </p>
+            
+            </div><!--give-the-thumbs-up-tv-name -->    
+   </div><!--hit-right-give-the-thumbs-up -->       
+            
+ <!--......................................输入你想看的剧................................................ -->               
+<!--......................................输入你想看的电影................................................ -->               
+ <div class="hit-right-want-to-see">
+ 	<div class="hit-right-want-to-see-title">输入你想看的电视剧</div>
+    <div class="hit-right-want-to-see-text">
+    	<form method="post">
+    		<textarea name="meg" rows="5" cols="50" class="text">输入你想看的电视剧，猫姐会尽快更新资源的</textarea>
+            <input class="tijiao" type="submit" value="提交">
+            <input class="chongzhi" type="reset" value="重置">
+      </form>
+
+    </div><!-- hit-right-want-to-see-->
+ </div> <!-- hit-right-want-to-see-->         
+        
+    
+
+        
+        
+        
+        
+        </div><!--hit-right -->
+    	
+    </div><!--hit -->
+    
+    
+    
+    
+    
+  
+    
+ <!--...............................版尾.............................................................. -->
+	<div id="bottom">
+    	<div class="bottom-com">
+    		<div class="bottom-left">
+            	<ul>
+                	<li><a href="#">关于</a></li>
+                	<li><a href="#">关于我们</a></li>
+                	<li><a href="#">版权声明</a></li>
+                	<li><a href="#">用户协议</a></li>
+                </ul>
+            </div><!--bottom-left -->
+        	<div class="bottom-middle">
+            	<ul>
+                	<li><a href="#">服务</a></li>
+                	<li><a href="#">加入收藏</a></li>
+                	<li><a href="#">官方微博</a></li>
+                	<li><a href="#">联系方式</a></li>
+                </ul>
+            </div><!-- bottom-middle-->
+        	<div class="bottom-right">
+            	<img src="../images/index-img/二维码.jpg" width="67px" height="66px">
+                	<br><p style="margin-top:8px">扫一扫</p><p style="margin-top:8px"></p>为您送上猫视的最新动态
+            </div><!--bottom-right -->
+        </div><!-- bottom-com-->
+    </div><!--版尾 -->
+	  
+    
+<!-- ..........................................返回顶部......................................................-->
+	<div class="floating_ck">
+		<dl> 
+        	<dd class="return">
+        		<span onClick="gotoTop();return false;">返回顶部</span>
+        	</dd>
+    	</dl>
+	</div><!--返回顶部 -->	    
+    
+ <!--.....................................................................................................-->   
+ </div>  <!--com -->
+</body>
+</html>

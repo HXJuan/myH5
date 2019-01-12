@@ -1,0 +1,584 @@
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+#com
+{
+	width:100%;
+	height:auto;
+	background-color:＃F1FAFzA;
+	border:1px  green;
+	
+	
+	
+	
+	
+}
+/*.............................标题..........................*/
+#title
+{
+	width:100%;
+	height:130px;
+	border:1px  pink;
+}
+	/*.............................logo..........................*/
+	.logo
+	{
+		width:205px;
+		height:80px;
+		border:1px  black;
+		margin:10px auto 0 auto;
+	
+	}
+	/*.............................导语..........................*/
+	.lead
+	{
+		width:330px;
+		height:50px;
+		border:1px black;
+		margin:auto;
+		text-align:center;
+		font-size:40px;
+		font-family:"华文行楷";
+		
+	}
+/*.............................导航与搜索..........................*/
+/*.................*/
+#navigation-search
+{
+	width:100%;
+	height:40px;
+	border:1px  black;
+	margin-top:30px;
+	
+	
+}
+	/*.............................导航与搜索..........................*/
+	.navigation
+	{
+		width:50%;
+		height:50px;
+		background:＃F1FAFA;
+		margin:auto;
+		text-align:center;
+	}
+	a
+	{
+		text-decoration:none;
+		color:#000;
+	}
+	.nav
+	{
+		width:100%;
+		height:50px;
+		background:＃F1FAFA;
+		margin:0 0 0 145px;
+		float:left;
+	}
+	.nav, .nav li ul 
+	{ 
+		list-style-type:none; 
+	} 
+		.nav li 
+		{ 
+			float:left; 
+			text-align:center; 
+			position:relative; 
+		} 
+			.nav li a 
+			{ 
+				display:block; /*a转换为块元素*/
+				color:#fff; 
+				width:82px; 
+				height:40px;/*高40px与行高40px,实现单行文本垂直居中*/
+				line-height:40px;
+				border:1px solid #fff; 
+				background:#000; 
+				padding-left:5px; 
+			} 
+				.nav li a:hover
+				 { 
+					color:#fff; 
+					background:#008040; 
+					
+				} 
+					.nav li a.home, .nav li a:hover
+					{
+						background:#008040;
+						 }
+							.nav li ul /*.................二级导航的样式...................*/
+							{ 
+								display:none; 
+								position:absolute; 
+								top:40px;
+								font-size:12px;
+								z-index:999;
+								} 
+
+ 
+		
+	/*.............................搜索............................................*/
+.search
+{
+	width:25%;
+	height:50px;
+	margin-right:50px;
+	margin-top:-50px;
+	float:right;
+}
+	.search-box
+	{
+		width:250px;
+		height:38px;
+		border:#000 solid 1.6px;
+		font-size:16px;
+		color:#999;
+	
+	}
+		.search-onlick
+		{
+			width:40px;
+			height:40px;
+			font-size:16px;
+			margin-left:-5px;
+			background:#008000;
+			color:#FFF;
+
+		}
+		.login
+		{
+			width:auto;
+			height:20px;
+			border:1px   green;
+			margin-right:75px;
+			float:right;
+			margin-top:-30px;
+		}
+			.login a:hover
+			{
+				color:#008040;
+				}
+/*..................................最新电视剧.......................................*/
+#newest-tv-title
+{
+	width:100px;
+	height:40px;
+	border:1px solid green;
+	margin:auto;
+	text-align:center;
+	font-size:20px;
+	line-height:35px;
+}
+ 
+.newest-tv
+{
+	width:63.80%;
+	height:860px;
+	border:1px  green;
+	background:#f3f3f3;
+	margin:40px auto auto auto;
+}
+	.newest-tv-A
+	{
+		width:240px;
+		height:370px;
+		background:#fff;
+		float:left;
+		text-align:center;
+		font-family:"宋体";
+		margin-left:3px;
+		
+		}
+			.newest-tv-B
+			{
+				width:240px;
+				height:370px;
+				background:#fff;
+				float:left;
+				text-align:center;
+				font-family:"宋体";
+				margin-left:40px;
+		
+			}
+				.newest-tv-C
+				{
+					width:240px;
+					height:370px;
+					background:#fff;
+					float:left;
+					text-align:center;
+					font-family:"宋体";
+					margin-left:40px;
+		
+				}
+		
+					.newest-tv-D
+					{
+						width:240px;
+						height:370px;
+						background:#fff;
+						float:left;
+						text-align:center;
+						font-family:"宋体";
+						margin-top:40px;
+						margin-left:3px;
+					}
+						.newest-tv-E
+						{
+							width:240px;
+							height:370px;
+							background:#fff;
+							float:left;
+							text-align:center;
+							font-family:"宋体";
+							margin-left:40px;
+							margin-top:40px;
+		
+						}
+							.newest-tv-F
+							{
+								width:240px;
+								height:370px;
+								background:#fff;
+								float:left;
+								text-align:center;
+								font-family:"宋体";
+								margin-left:40px;
+								margin-top:40px;
+		
+								}
+									.newest-tv a:hover
+									{
+										opacity:0.5;
+									}
+																			.more
+																			{
+																				width:100px;
+																				height:40px;
+																				font-size:20px;
+																				line-height:100px;
+																				border:1px  red;
+																				margin:auto;
+																				font-family:"宋体";
+																				
+																			}
+																			.more a:hover
+																			{
+																				color:#008040;
+																			}
+			
+/*..................................最新电影.......................................*/
+#newest-film-title
+{
+	width:100px;
+	height:40px;
+	border:1px solid green;
+	margin:50px auto auto auto;
+	text-align:center;
+	font-size:20px;
+	line-height:35px;
+}
+ 
+	.newest-film
+	{
+		width:63.80%;
+		height:860px;
+		border:1px  green;
+		background:#f3f3f3;
+		margin:40px auto auto auto;
+	}
+		.newest-film-A
+		{
+			width:240px;
+			height:370px;
+			background:#fff;
+			float:left;
+			text-align:center;
+			font-family:"宋体";
+			margin-left:3px;
+		}
+			.newest-film-B
+			{
+				width:240px;
+				height:370px;
+				background:#fff;
+				float:left;
+				text-align:center;
+				font-family:"宋体";
+				margin-left:40px;
+		
+			}
+				.newest-film-C
+				{
+					width:240px;
+					height:370px;
+					background:#fff;
+					float:left;
+					text-align:center;
+					font-family:"宋体";
+					margin-left:40px;
+		
+				}
+		
+					.newest-film-D
+					{
+						width:240px;
+						height:370px;
+						background:#fff;
+						float:left;
+						text-align:center;
+						font-family:"宋体";
+						margin-top:40px;
+						margin-left:3px;
+					}
+						.newest-film-E
+						{
+							width:240px;
+							height:370px;
+							background:#fff;
+							float:left;
+							text-align:center;
+							font-family:"宋体";
+							margin-left:40px;
+							margin-top:40px;
+		
+						}
+							.newest-film-F
+							{
+								width:240px;
+								height:370px;
+								background:#fff;
+								float:left;
+								text-align:center;
+								font-family:"宋体";
+								margin-left:40px;
+								margin-top:40px;
+		
+							}
+								.newest-film a:hover
+								{
+									opacity:0.5;
+				
+								}
+			
+/*..................................最新综艺.......................................*/
+#newest-vareity-title
+{
+	width:100px;
+	height:40px;
+	border:1px solid green;
+	margin:50px auto auto auto;
+	text-align:center;
+	font-size:20px;
+	line-height:35px;
+}
+ 
+	.newest-vareity
+	{
+		width:63.8%;
+		height:860px;
+		border:1px  green;
+		background:#f3f3f3;
+		margin:40px auto auto auto;
+	}
+		.newest-vareity-A
+		{
+			width:240px;
+			height:370px;
+			background:#fff;
+			float:left;
+			text-align:center;
+			font-family:"宋体";
+			margin-left:3px;
+		
+		}
+			.newest-vareity-B
+			{
+				width:240px;
+				height:370px;
+				background:#fff;
+				float:left;
+				text-align:center;
+				font-family:"宋体";
+				margin-left:40px;
+		
+			}
+				.newest-vareity-C
+				{
+					width:240px;
+					height:370px;
+					background:#fff;
+					float:left;
+					text-align:center;
+					font-family:"宋体";
+					margin-left:40px;
+		
+				}
+		
+					.newest-vareity-D
+					{
+						width:240px;
+						height:370px;
+						background:#fff;
+						float:left;
+						text-align:center;
+						font-family:"宋体";
+						margin-top:40px;
+						margin-left:3px;
+						}
+						.newest-vareity-E
+						{
+							width:240px;
+							height:370px;
+							background:#fff;
+							float:left;
+							text-align:center;
+							font-family:"宋体";
+							margin-left:40px;
+							margin-top:40px;
+		
+							}
+							.newest-vareity-F
+							{
+								width:240px;
+								height:370px;
+								background:#fff;
+								float:left;
+								text-align:center;
+								font-family:"宋体";
+								margin-left:40px;
+								margin-top:40px;
+		
+								}
+								.newest-vareity a:hover
+								{
+									opacity:0.5;
+				
+									}
+					
+	/*........................版尾bottom................................................*/		
+#bottom
+{
+	width:100%;
+	height:200px;
+	border:1px  pink;
+	background:#333;
+	margin-top:100px;
+	}
+	.bottom-com
+	{
+		width:50%;
+		height:150px;
+		border:1px  pink;
+	
+		margin:30px auto auto auto;
+		font-family:"宋体";
+		}
+	
+		.bottom-left
+		{
+			width:30%;
+			height:150px;
+			border:1px  pink;
+		margin-top:25px;
+			text-align:center;
+			float:left;
+			font-size:14px;
+			
+			
+			
+			}
+		
+			.bottom-middle
+			{
+				width:30%;
+				height:150px;
+				border:1px  pink;
+				margin-top:25px;
+				text-align:center;
+				float:left;
+				font-size:14px;
+				}
+				.bottom-right
+				{
+					width:39%;
+					height:150px;
+					border:1px  #0FF;
+					color:#fff;
+					margin-top:25px;
+					text-align:center;
+					float:left;
+					font-size:14px;
+					}
+					.bottom-left ul li a 
+					{ 
+
+						color:#fff; 
+						width:82px; 
+						height:30px;
+						line-height:30px;
+
+ 						}  
+						.bottom-left ul li a:hover 
+						{ 
+							color:#008040; 
+							} 
+							.bottom-middle ul li a 
+							{ 
+
+								color:#fff; 
+								width:82px; 
+								height:30px;
+								line-height:30px;
+
+ 								}  
+								.bottom-middle ul li a:hover 
+								{ 
+									color:#008040; 
+									} 
+									
+/*.......................................返回顶部............................................................*/
+dl,dd,dt
+{
+	margin:0;
+	padding:0;
+	}
+		.floating_ck
+		{
+			position:fixed;
+			right:20px;
+			top:80%;
+			}
+				.floating_ck dl dd
+				{
+					position:relative;
+					width:80px;
+					height:80px;
+					background-color:#000;
+					border-bottom: 1px #555666;
+					text-align:center;
+					background-repeat:no-repeat;
+					background-position:center 20%;
+					cursor:pointer;
+					}
+						.floating_ck dl dd:hover
+						{
+							background-color:#008040;
+							border-bottom: 1px #a40324;
+							}
+								.floating_ck dl dd:hover .floating_left
+								{
+									display:block;
+									}
+										.return
+										{
+											background-image:url(../images/index-img/fanhui.png);
+											}
+												.floating_ck dd span
+												{
+													color:#fff;
+													display:block;
+													padding-top:54px;
+													}

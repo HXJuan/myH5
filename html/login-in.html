@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/login-in.css">
+
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/easySlider.js"></script>
+<script src="../js/index.js"></script>
+</head>
+<body onLoad="alert('注册成功，马上登录吧')"></body>
+
+
+<body>
+<!--.........................................全局......................................................... -->
+<div id="com">
+<!--........................................title......................................................... -->
+	<div id="title">
+    	<div class="logo"><img src="../images/index-img/logo.gif" width="203px" height="78px"></div>
+        <div class="lead">猫姐与你一同追剧</div>
+        <div class="login">
+        	<a href="login-in.html">登录
+        		</a>&nbsp;/&nbsp;
+                	<a href="register.html">注册
+                 </a>    
+      </div>
+    </div>
+ <!--.........................................导航与搜索............................................. -->
+ 	<div id="navigation-search">
+    	<!--..............................导航,二级导航 .........................-->
+    	<div class="navigation">
+        	<ul class="nav">
+            	<li><a href="#" class="home">首页</a></li>
+            	<li onmouseover=" displaysubMenu(this)" onmouseout="hidesubMenu(this)"><a href="#">电视剧</a> 
+					  <ul>
+						<li><a href="#">内地</a></li> 
+						<li><a href="#">港剧</a></li> 
+						<li><a href="#">台剧</a></li> 
+                		<li><a href="#">韩剧</a></li> 
+						<li><a href="#">美剧</a></li> 
+					</ul> 
+				</li>
+                <li onmouseover=" displaysubMenu(this)" onmouseout="hidesubMenu(this)"><a href="#">电影</a>
+                	<ul>
+                    	<li><a href="#">最近热映</a></li> 
+						<li><a href="#">网络电影</a></li> 
+                    </ul>
+                  <li><a href="#">综艺</a></li>
+            </ul>
+            </div>  
+            	<div class="search">
+            	 <form>
+    			<input class="search-box"  type="text" value="请在此输入片名或演员名称">
+    			<input class="search-onlick"  type="button" value="搜索" >
+   				</form>
+                </div>
+               </div><!-- 导航与搜索div-->
+
+<!-- ..................................轮播图.......................................................-->
+              <div id="slider">
+	<ul class="slides clearfix">
+		<li><img class="responsive" src="../images/index-img/狐狸的夏天.jpg" width="1112" height="696"></li>
+		<li><img class="responsive" src="../images/index-img/少年团.jpg" width="1112" height="696"></li>
+		<li><img class="responsive" src="../images/index-img/喜欢你.jpg" width="1112" height="696"></li>
+		<li><img class="responsive" src="../images/index-img/花儿与少年.jpg" width="1112" height="696"></li>
+	</ul>
+	<ul class="controls">
+		<li><img src="../images/index-img/prev.png" alt="previous"></li>
+		<li><img src="../images/index-img/next.png" alt="next"></li>
+	</ul>
+	<ul class="pagination">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<!--............................最新电视剧...................................................-->
+      
+      
+      <div id="newest-tv-title">最新电视剧</div> 
+      	<div class="newest-tv">
+        	<div class="newest-tv-A">
+            	<a href="#">
+            		<img src="../images/index-img/外科.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px" >白百合 靳东</p><p style="margin-top:8px" >外科风云
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="newest-tv-B">
+             	<a href="#">
+             		<img src="../images/index-img/大唐荣耀.jpg" width="240px" height="315px">
+                    	<p style="margin-top:8px">景甜 任嘉伦</p><p style="margin-top:8px" >大唐荣耀
+                    </p>
+                 </a>
+            </div>
+               <div class="newest-tv-C">
+               		<a href="#">
+               			<img src="../images/index-img/特工皇妃.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">赵丽颖 林更新</p><p style="margin-top:8px" >特工皇妃楚乔传
+                </p>
+             </a>
+         </div>     			 
+                <div class="newest-tv-D">
+                	<a href="#">
+               			<img src="../images/index-img/蓝色大海的传说.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">李敏浩 全智贤</p><p style="margin-top:8px" >蓝色大海的传说
+                </p>
+            </a>
+        </div>
+                <div class="newest-tv-E">
+                	<a href="#">
+              			 <img src="../images/index-img/在这世界的角落.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px">北川景子  小出惠介</p><p style="margin-top:8px" >在这世界的角落
+                </p>
+            </a>
+        </div>
+                <div class="newest-tv-F">
+                	<a href="#">
+               			<img src="../images/index-img/时尚.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px"> Richard Coyle  Mamie Gummer
+                            	</p>
+                        	<p style="margin-top:8px" >时尚风云
+                              </p>
+                          </a>
+                    </div>
+        </div><!-- newest-tv--> 			
+         
+<!--..........................................最新电影.......................................... -->
+		<div id="newest-film-title">最新电影</div> 
+      	<div class="newest-film">
+        	<div class="newest-film-A">
+            	<a href="#">
+            		<img src="../images/index-img/有迹可循.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px" >张雅玫  董博睿</p><p style="margin-top:8px" >有迹可循
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="newest-film-B">
+             	<a href="#">
+             		<img src="../images/index-img/冲天火.jpg" width="240px" height="315px">
+                    	<p style="margin-top:8px"> 吴彦祖  张若昀 </p><p style="margin-top:8px" >冲天火
+                    </p>
+                 </a>
+            </div>
+               <div class="newest-film-C">
+               		<a href="#">
+               			<img src="../images/index-img/摆渡人.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px"> 梁朝伟  金城武</p><p style="margin-top:8px" >摆渡人
+                </p>
+             </a>
+         </div>     			 
+                <div class="newest-film-D">
+                	<a href="#">
+               			<img src="../images/index-img/樱桃小丸子.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">鳕子  屋良有作</p><p style="margin-top:8px" >樱桃小丸子：来自意大利的少年
+                </p>
+            </a>
+        </div>
+                <div class="newest-film-E">
+                	<a href="#">
+              			 <img src="../images/index-img/魔弦传说.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px">查理兹·塞隆  马修·麦康纳 </p><p style="margin-top:8px" >魔弦传说
+                </p>
+            </a>
+        </div>
+                <div class="newest-film-F">
+                	<a href="#">
+               			<img src="../images/index-img/天才捕手.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">  科林·费尔斯  裘德·洛
+                            	</p>
+                        	<p style="margin-top:8px" >天才捕手
+                              </p>
+                          </a>
+                    </div>
+        </div><!-- newest-film--> 			
+
+<!--............................最新综艺...................................................-->
+      
+      
+      <div id="newest-vareity-title">最新综艺</div> 
+      	<div class="newest-vareity">
+        	<div class="newest-vareity-A">
+            	<a href="#">
+            		<img src="../images/index-img/奔跑吧.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px" >奔跑吧</p><p style="margin-top:8px" >baby热巴撕名牌
+                       </p>
+                	</a>
+              </div>
+              
+             <div class="newest-vareity-B">
+             	<a href="#">
+             		<img src="../images/index-img/高能少年团.jpg" width="240px" height="315px">
+                    	<p style="margin-top:8px">高能少年团</p><p style="margin-top:8px" >少年们变身渔夫
+                    </p>
+                 </a>
+            </div>
+               <div class="newest-vareity-C">
+               		<a href="#">
+               			<img src="../images/index-img/笑声传奇.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">笑声传奇</p><p style="margin-top:8px" >大兵变搞笑大忽悠
+                </p>
+             </a>
+         </div> 
+         <div class="newest-vareity-D">
+                	<a href="#">
+              			 <img src="../images/index-img/金星秀.jpg" width="240px" height="315px">
+            			<p style="margin-top:8px">金星秀</p><p style="margin-top:8px" >胡歌郑元畅疯抢林依晨
+                </p>
+            </a>
+        </div>    			 
+                <div class="newest-vareity-E">
+                	<a href="#">
+               			<img src="../images/index-img/无限挑战.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px">无限挑战</p><p style="margin-top:8px" >BINGBANG无挑时尚对决
+                </p>
+            </a>
+        </div>
+                
+                <div class="newest-vareity-F">
+                	<a href="#">
+               			<img src="../images/index-img/艾伦秀第十四季.jpg" width="240px" height="315px">
+            				<p style="margin-top:8px"> 艾伦秀第十四季
+                            	</p>
+                        	<p style="margin-top:8px" >霍伊.曼德尔
+                              </p>
+                          </a>
+                    </div>
+        </div><!-- newest-vareity--> 			
+
+
+<!--...............................版尾.............................................................. -->
+	<div id="bottom">
+    	<div class="bottom-com">
+    		<div class="bottom-left">
+            	<ul>
+                	<li><a href="#">关于</a></li>
+                	<li><a href="#">关于我们</a></li>
+                	<li><a href="#">版权声明</a></li>
+                	<li><a href="#">用户协议</a></li>
+                </ul>
+            </div><!--bottom-left -->
+        	<div class="bottom-middle">
+            	<ul>
+                	<li><a href="#">服务</a></li>
+                	<li><a href="#">加入收藏</a></li>
+                	<li><a href="#">官方微博</a></li>
+                	<li><a href="#">联系方式</a></li>
+                </ul>
+            </div><!-- bottom-middle-->
+        	<div class="bottom-right">
+            	<img src="../images/index-img/二维码.jpg" width="67px" height="66px">
+                	<br><p style="margin-top:8px">扫一扫</p><p style="margin-top:8px"></p>为您送上猫视的最新动态
+            </div><!--bottom-right -->
+        </div><!-- bottom-com-->
+    </div><!--版尾 -->
+	
+</div><!--全局div -->
+		
+
+<!--...................................登录界面.........................................................................................................................................................................................................................-->
+	
+<div id="login-in">
+	<div class="return-page">
+	<div class="return-home">
+    <a href="index.html">&times;</a>
+    </div></div>
+	 <div class="main_nav">
+    
+			<ul>
+				<li><a class="cd-signin" href="#0"><span style="color:#008040">登录</span></a></li>
+				<li><a class="cd-signup" href="#0">注册</a></li>
+			</ul>
+		</div><!--main_nav-->
+        
+       <div id="cd-login"> <!-- 登录表单 -->
+				<form class="cd-form" method="post" action="index-login-in.html">
+					<p class="fieldset">
+						<!-- <label class="image-replace cd-username" for="signin-username"></label>-->
+						<input class="full-width has-padding has-border" id="signin-username" 
+                        type="text" placeholder="输入用户名">
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password"></label>
+                        <input class="full-width has-padding has-border" id="signin-password" 
+                        type="text"  placeholder="输入密码">
+					</p>
+                    <p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">记住登录状态</label>
+					</p>
+						
+					
+                    <p class="fieldset">
+                    
+                        <input class="full-width2" type="submit" value="登 录" >
+					</p>
+				</form>
+			</div> 
+</div><!-- login-in-->
+
+</body>
+</html>
